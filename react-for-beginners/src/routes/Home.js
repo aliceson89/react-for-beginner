@@ -27,7 +27,6 @@ function Home() {
         </div>
       ) : (
         <div className={styles.movies}>
-          <h1>Movies which I have {movies.length}</h1>
           {movies.map((movie) => (
             <Movie
               key={movie.id}

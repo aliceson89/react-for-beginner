@@ -21,18 +21,17 @@ function Detail() {
   }, [getMovie]);
   return (
     <div>
-      <h1>Detail</h1>
       {loading ? (
         <h1>Loading...</h1>
       ) : (
         <div>
-          <h2>{movie.title}</h2>
           <Movie
             key={movie.id}
             id={movie.id}
             coverImg={movie.medium_cover_image}
             title={movie.title}
             genres={movie.genres}
+            description={movie.description_full}
           />
         </div>
       )}
