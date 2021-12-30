@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import ToDoList from "./ToDoList";
 import CoinTracker from "./CoinTracker";
 import App from "./App";
+import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.render(
   <React.StrictMode>
